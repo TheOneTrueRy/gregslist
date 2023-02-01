@@ -6,11 +6,11 @@ img{
 
 /* SECTION Classes */
 
-.car{
+.cardBack{
   position: relative;
 }
 
-.car p{
+.cardBack p{
   position: absolute;
   bottom: 0%;
   font-size: large;

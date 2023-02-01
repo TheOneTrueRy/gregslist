@@ -32,8 +32,8 @@ export class CarsController {
   }
 
   show() {
-    setText('add-listing-button', '🚙 A new Car?')
-    setText('listingFormLabel', '🚓 Impounded title... Get it cheap')
+    setText('add-listing-button', '🚙 Sell Car')
+    setText('listingFormLabel', '🚓 Spill the deats!')
 
     setHTML('the-actual-form', Car.CarForm())
 
@@ -66,7 +66,7 @@ export class CarsController {
 
   async deleteCar(carId) {
     try {
-      const yes = await Pop.confirm('Are you really sure you don\'t want to delete the car maybe yes?')
+      const yes = await Pop.confirm('Are you sure you want to erase this listing?')
       if (!yes) { return } // full stop
 
       carsService.deleteCar(carId)

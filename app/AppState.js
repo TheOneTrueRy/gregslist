@@ -15,7 +15,11 @@ class AppState extends EventEmitter {
   car = null
 
   /** @type {import('./Models/Job').Job[]} */
-  card = loadState('jobs', [Job])
+  jobs = loadState('jobs', [Job])
+
+  /** @type {import('./Models/Job').Job} */
+
+  job = null
 }
 
 export const appState = new Proxy(new AppState(), {

@@ -15,7 +15,7 @@ export class Car {
   get CarCardTemplate() {
     return /*html*/`
     <div class="col-md-4 my-3">
-    <div class="card elevation-2 car" onclick="app.carsController.setActiveCar('${this.id}')" data-bs-toggle="modal" data-bs-target="#listingModal">
+    <div class="card elevation-2 cardBack" onclick="app.carsController.setActiveCar('${this.id}')" data-bs-toggle="modal" data-bs-target="#listingModal">
       <img
         src="${this.imgUrl}"
         alt="${this.make}" class="rounded">
@@ -28,7 +28,7 @@ export class Car {
 
   get CarDetailsTemplate(){
     return /*html*/`
-    <div class="container-fluid">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-12 d-flex justify-content-center flex-column align-items-center px-5">
         <img src="${this.imgUrl}" alt="">
@@ -37,7 +37,7 @@ export class Car {
         <p>${this.description}</p>
       </div>
       <div class="col-12 py-3">
-        <button class="btn btn-danger" data-bs-dismiss="modal" onclick="app.carsController.deleteCar('${this.id}')">DELETE THE CAR!!!!!</button>
+        <button class="btn btn-danger" data-bs-dismiss="modal" onclick="app.carsController.deleteCar('${this.id}')">Erase Listing</button>
       </div>
     </div>
   </div>
@@ -80,7 +80,7 @@ export class Car {
           <label for="description">Description</label>
         </div>
 
-        <div class="d-flex my-4 gap-5 align-items-center">
+        <div class="d-flex my-4 justify-content-between align-items-center">
           <button class="btn" type="reset">Cancel</button>
           <button class="btn btn-primary" type="submit" data-bs-dismiss="offcanvas">Submit</button>
         </div>
