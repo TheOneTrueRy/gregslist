@@ -28,9 +28,19 @@ export class Car {
 
   get CarDetailsTemplate(){
     return /*html*/`
-      <div>
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center flex-column align-items-center px-5">
+        <img src="${this.imgUrl}" alt="">
+        <p class="fs-3">${this.make} ${this.model}</p>
+        <p class="fs-4">$${this.price}</p>
+        <p>${this.description}</p>
+      </div>
+      <div class="col-12 py-3">
         <button class="btn btn-danger" data-bs-dismiss="modal" onclick="app.carsController.deleteCar('${this.id}')">DELETE THE CAR!!!!!</button>
       </div>
+    </div>
+  </div>
     `
   }
 
