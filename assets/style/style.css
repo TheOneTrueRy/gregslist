@@ -1,4 +1,11 @@
-/* BASIC STYLES HERE */
+/* SECTION Elements & Other */
+
+img{
+  height: 300px;
+  width: auto;
+}
+
+/* SECTION Classes */
 
 .car{
   position: relative;
@@ -6,10 +13,17 @@
 
 .car p{
   position: absolute;
-  bottom: 5%;
-  font-size: x-large;
-  color: bisque;
-  filter: drop-shadow(0 0 15px rgba(250, 128, 114, 0.691));
+  bottom: 0%;
+  font-size: large;
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.691));
   left: 1rem;
   user-select: none;
 }
+
+.nomb{
+  margin-bottom: 0;
+}
+
+/* SECTION IDs */
+

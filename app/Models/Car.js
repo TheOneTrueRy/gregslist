@@ -41,12 +41,12 @@ export class Car {
     <form onsubmit="app.carsController.handleFormSubmit()">
 
         <div class="form-floating mb-3">
-          <input type="text" class="form-control" name="make" required minlength="3" maxlength="20">
+          <input type="text" class="form-control" name="make" required maxlength="10">
           <label for="make">Make</label>
         </div>
 
         <div class="form-floating mb-3">
-          <input type="text" class="form-control" name="model" required>
+          <input type="text" class="form-control" name="model" required maxlength="16">
           <label for="model">Model</label>
         </div>
 
