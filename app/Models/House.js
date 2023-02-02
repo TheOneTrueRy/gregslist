@@ -16,8 +16,8 @@ export class House {
 
   get HouseCard(){
     return /*html*/ `
-    <div class="card elevation-2" onclick="app.housesController.setActiveJob('${this.Id}')" data-bs-toggle="modal" data-bs-target="#listingModal">
     <div class="col-md-4 my-3">
+    <div class="card elevation-2 cardBack" onclick="app.housesController.setActiveHouse('${this.Id}')" data-bs-toggle="modal" data-bs-target="#listingModal">
       <img src="${this.img}" alt="${this.address}" class="rounded">
       <p><b>${this.address} - $${this.price}</b></p>
     </div>

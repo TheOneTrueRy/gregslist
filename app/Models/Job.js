@@ -14,8 +14,8 @@ export class Job {
 
   get JobCard(){
     return /*html*/ `
-    <div class="card elevation-2" onclick="app.carsController.setActiveJob('${this.Id}')" data-bs-toggle="modal" data-bs-target="#listingModal">
     <div class="col-md-4 my-3">
+    <div class="card elevation-2 cardBack" onclick="app.jobsController.setActiveJob('${this.Id}')" data-bs-toggle="modal" data-bs-target="#listingModal">
       <img src="${this.img}" alt="${this.position}" class="rounded">
       <p><b>${this.business} - ${this.position}</b></p>
     </div>
