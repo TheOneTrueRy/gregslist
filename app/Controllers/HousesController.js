@@ -43,4 +43,23 @@ export class HousesController {
       Pop.error(error)
     }
   }
+
+  setActiveHouse(houseID) {
+    try {
+      housesService.setActiveHouse(houseID)
+    } catch (error) {
+      Pop.error(error)
+    }
+  }
+
+  async deleteHouse(houseID) {
+    try {
+      const yes = await Pop.confirm('Are you sure you want to erase this listing?')
+      if (!yes) { return } // full stop
+
+      housesService.deleteHouse(houseID)
+    } catch (error) {
+      Pop.error(error)
+    }
+  }
 }

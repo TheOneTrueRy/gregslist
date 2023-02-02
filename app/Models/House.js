@@ -86,7 +86,7 @@ export class House {
 
     <div>
     <label for="description">Description</label>
-    <textarea class="form-control" placeholder="Additional Describing Details"></textarea>
+    <textarea class="form-control" placeholder="Additional Describing Details" name="description"></textarea>
     </div>
 
     <div class="d-flex my-4 justify-content-between align-items-center">
