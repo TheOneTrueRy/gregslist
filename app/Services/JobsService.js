@@ -17,6 +17,7 @@ class JobsService {
     let job = new Job(formData)
     appState.jobs.push(job)
     appState.emit('jobs')
+    saveState('jobs', appState.jobs)
   }
   setActiveJob(jobId) {
     const job = appState.jobs.find(j => j.Id == jobId)

@@ -35,7 +35,7 @@ export class JobsController {
 
   }
 
-  handleFormSubmission(){
+  handleFormSubmit(){
     try {
       event.preventDefault()
       const form = event.target

@@ -16,9 +16,7 @@ export class Job {
     return /*html*/ `
     <div class="card elevation-2" onclick="app.carsController.setActiveJob('${this.Id}')" data-bs-toggle="modal" data-bs-target="#listingModal">
     <div class="col-md-4 my-3">
-      <img
-        src="${this.img}"
-        alt="${this.position}" class="rounded">
+      <img src="${this.img}" alt="${this.position}" class="rounded">
       <p><b>${this.business} - ${this.position}</b></p>
     </div>
   </div>
